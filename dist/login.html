@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<link rel="stylesheet" href="css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/login1.css">
+	<link rel="stylesheet" href="css/current.css">
+	<script src = 'js/jquery-1.10.1.min.js'></script>
+	<script src = "js/index.js"></script>
+	<script src = "js/ajax.js"></script>
+	<script src = "js/login.js"></script>
+	<script src = "js/product_list.js"></script>
+	<script type = "text/javascript" src="js/jquery.cookie.js"></script>
+</head>
+<body>
+	<!-- header-top -->
+	<div class = "container-fluid hidden-xs" id = "header-top">
+		<div class = "hidden-xs" id = "header-inside">
+			<ul>
+				<li><a href="#">在线客服</a></li>
+				<li><a href="http://localhost/dist/login.html">登录</a></li>
+				<li><a href="http://localhost/dist/register.html">注册</a></li>
+				<li><a href="#">我的账户</a></li>
+				<li><a href="#">我的订单</a></li>
+				<li><a href="#">自助服务中心</a></li>
+				<li><span>CNY-人民币</span></li>
+			</ul>
+		</div>
+	</div>
+	<!-- header-content -->
+	<div calss = "container-fluid" id = "header-content">
+		<div id = "header-content-in">
+			<div id = "logo">
+				<a href="http://localhost/dist/index.html">
+					<img src="images/logo.svg" alt="">
+				</a>
+			</div>
+			<ul>
+				<li><a href="#">BRAND</a></li>
+				<li><a href="#">BEST</a></li>
+				<li><a href="#">MEDIA</a></li>
+				<li><a href="#">EVENT</a></li>
+			</ul>
+			<form action="">
+				<div id = "seek" class = "iconfont hidden-xs">
+					<input type="text" placeholder="在这里搜索所有商品">
+					<button disabled type = "submit">&#xe6d8;</button>
+				</div>
+			</form>
+			<div class = "right">
+				<div class = "num">
+					0
+				</div>
+				<a href="#" class = "iconfont">&#xe611;</a>
+				<div class="shopping-trolley">
+						<div class="delete">X</div>
+						<div class="no">
+						<span>您的购物车里没有商品</span>
+						</div>
+					<div class="top">
+							<div class="header">
+							<b>1</b>
+							<span>个商品</span>
+						</div>
+						<div class="price">
+							<span>购物车小计</span>
+							<b>￥ 400.00</b>
+						</div>
+						<div class="button">
+							<a href="">去结账</a><a href="">	购物车</a>
+						</div>
+					</div>
+					<div class="bottom"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- nav -->
+	<div class = "nav container-fluid" data-action = "navigation">
+		<div class="nav-in" data-action = "navigation">
+			<ul>
+				<li><a href="#" id = "a1-all">所有产品</a></li>
+				<li><a href="#" id = "a2-skin-care">基础护肤</a></li>
+				<li><a href="#" id = "a3-Makeup">彩妆</a></li>
+				<li><a href="#" id = "a4-bath">洗发沐浴</a></li>
+				<li><a href="#" id = "a5-VBYJ">妇婴用品</a></li>
+				<li><a href="#" id = "a6-man">男士</a></li>
+				<li><a href="#" id = "a7-Nichijou">日常用品</a></li>
+			</ul>
+		</div>
+		<div class ="all">
+			<h2 class = "h2a">按产品分类</h2>
+			<h2 class = "h2b">按品牌分类</h2>
+			<div class="goods">
+				<div>
+					<span><a href="">基础护理</a></span>
+					<a href="#">化妆水</a>
+					<a href="#">乳液</a>
+					<a href="#">精华液</a>
+					<a href="#">面霜</a>
+					<a href="#">眼霜</a>
+					<a href="#">防晒霜</a>
+					<a href="#">喷雾</a>
+					<a href="#">基础护理套装</a>
+					<span><a href="#">面膜</a></span>
+					<a href="#">面膜贴</a>
+					<a href="#">面膜膏</a>
+					<a href="#">贴膜</a>
+					<span><a href="#">洁面</a></span>
+					<a href="#">洁面乳</a>
+					<a href="#">洁面油</a>
+					<a href="#">卸妆水</a>
+					<a href="#">洁面霜</a>
+					<a href="#">卸妆巾</a>
+					<a href="#">眼唇卸妆液</a>
+					<a href="#">洁面乳</a>
+					<a href="#">去角质/磨砂</a>
+				</div>
+				<div>
+					<span><a href="#">底妆</a></span>
+					<a href="#">隔离 / 粉底</a>
+					<a href="#">粉底液</a>
+					<a href="#">粉饼 / 散粉</a>
+					<a href="#">BB霜 / CC霜</a>
+					<a href="#">气垫</a>
+					<a href="#">阴影 / 腮红</a>
+					<a href="#">提亮液</a>
+					<a href="#">遮瑕膏</a>
+					<span><a href="#">眼妆</a></span>
+					<a href="#">眼影</a>
+					<a href="#">睫毛膏</a>
+					<a href="#">眉笔</a>
+					<span><a href="#">唇膏</a></span>
+					<a href="#">唇膏</a>
+					<a href="#">唇彩</a>
+					<a href="#">唇蜜</a>
+					<a href="#">润唇膏 / 护唇膏</a>
+				</div>
+				<div>
+					<span><a href="#">护发用品</a></span>
+					<a href="#">洗发水</a>
+					<a href="#">护发素</a>
+					<a href="#">发膜 / 护发精华液</a>
+					<a href="#">染发剂 / 定型剂</a>
+					<a href="#">护发套装</a>
+					<span><a href="">沐浴用品</a></span>
+					<a href="#">沐浴露</a>
+					<a href="#">身体乳液 / 香体喷雾</a>
+					<a href="#">沐浴套装</a>
+					<a href="#">洗手液</a>
+					<a href="#">护手霜</a>
+				</div>
+				<div>
+					<span><a href="#">女性用品</a></span>
+					<a href="#">卫生巾</a>
+					<a href="#">护垫</a>
+					<a href="#">湿巾</a>
+					<a href="#">女用套装</a>
+					<span><a href="#">婴儿用品</a></span>
+					<a href="#">婴儿尿不湿</a>
+					<a href="#">婴儿护肤</a>
+					<a href="#">婴儿洗涤剂</a>
+				</div>
+				<div>
+					<span><a href="#">男化妆品</a></span>
+					<a href="#">男士基础护理</a>
+					<a href="#">男士洁面</a>
+					<a href="#">男士隔离霜 / BB霜</a>
+					<a href="#">男士套装</a>
+				</div>
+				<div>
+					<span><a href="#">牙刷</a></span>
+					<a href="#">牙膏</a>
+					<a href="#">漱口水</a>
+					<a href="#">美牙</a>
+					<a href="#">口腔套装</a>
+					<span><a href="#">居家用品</a></span>
+					<a href="#">洗衣粉</a>
+					<a href="#">柔顺剂</a>
+					<a href="#">厨房洗剂</a>
+					<a href="#">居家洗涤</a>
+					<a href="">芳香剂</a>
+					<span><a href="##">Health Food</a></span>
+					<a href="##">Healthy Food</a>
+				</div>
+			</div>
+			<div class="brand">
+				<div>
+					<a href="##">后(Whoo)</a>
+					<a href="##">欧惠(OHUI)</a>
+					<a href="##">苏秘37(SU:M37°)</a>
+					<a href="##">碧硏菲(Belif)</a>
+					<a href="##">伊诺姿(ISAKNOX)</a>
+					<a href="##">秀雅韩(Sooryehan)</a>
+					<a href="##">博尼(VONIN)</a>
+					<a href="##">蔻瑞哲(CAREZONE)</a>
+				</div>
+				<div>
+					<a href="##">诗佳秀(The saga of 秀)</a>
+					<a href="##">贝妍德(Beyond)</a>
+					<a href="##">希恩派(CNP)</a>
+					<a href="#">希恩派奈思(CNP RX)</a>
+					<a href="#">菲诗小铺(THEFACESHOP)</a>
+					<a href="#">TOMARU</a>
+					<a href="#">蒂尔派克(DEARPACKER)</a>
+					<a href="#">The Remedy</a>
+				</div>
+				<div>
+					<a href="#">媚可媚可(MAKEREMAKE)</a>
+					<a href="#">爱润丝婷(Elastine)</a>
+					<a href="#">Celluv</a>
+					<a href="#">睿嫣(ReEn)</a>
+					<a href="#">ORGANIST</a>
+					<a href="#">PHYTO DERMA</a>
+					<a href="#">SILK THERAPY</a>
+					<a href="#">ONTHEBODY</a>
+				</div>
+				<div>
+					<a href="#">倍瑞傲(PERIOE)</a>
+					<a href="#">竹盐(Bamboo Salt)</a>
+					<a href="#">舒福蓝(Saffron)</a>
+					<a href="#">HANIP</a>
+					<a href="#">汰蔻(Tech)</a>
+					<a href="#">FiJi</a>
+					<a href="#">净然品(Jayeonpong)</a>
+					<a href="#">WHY</a>
+				</div>
+				<div>
+					<a href="#">宝贝恩赐(Babience)</a>
+					<a href="#">贵艾朗(Guiaerang)</a>
+					<a href="#">MINIS</a>
+					<a href="#">家居之星(HOMESTAR)</a>
+					<a href="#">KAKAO</a>
+					<a href="#">Sofy</a>
+					<a href="#">克洛特(Dr.Groot)</a>
+					<a href="#">GENTOLOGY</a>
+				</div>
+				<div>
+					<a href="#">YUNGO</a>
+					<a href="#">Toddien/淘淘安</a>
+					<a href="#">凯丝猫(CODE)</a>
+					<a href="#">Method</a>
+					<a href="#">蓓迪珀芙(VDIVOV)</a>
+					<a href="#">生活精元</a>
+					<a href="#">薇蒂艾儿(VDL Cosmetic)</a>
+				</div>
+			</div>
+		</div>
+		<div class = "skin-care">
+			<div class = "content">
+				<div>
+					<span><a href="">基础护理</a></span>
+					<a href="#">化妆水</a>
+					<a href="#">乳液</a>
+					<a href="#">精华液</a>
+					<a href="#">面霜</a>
+					<a href="#">眼霜</a>
+					<a href="#">防晒霜</a>
+					<a href="#">喷雾</a>
+					<a href="#">基础护理套装</a>
+				</div>
+				<div>
+					<span><a href="#">面膜</a></span>
+					<a href="#">面膜贴</a>
+					<a href="#">面膜膏</a>
+					<a href="#">贴膜</a>
+				</div>
+				<div>
+					<span><a href="#">洁面</a></span>
+					<a href="#">洁面乳</a>
+					<a href="#">洁面油</a>
+					<a href="#">卸妆水</a>
+					<a href="#">洁面霜</a>
+					<a href="#">卸妆巾</a>
+					<a href="#">眼唇卸妆液</a>
+					<a href="#">洁面乳</a>
+					<a href="#">去角质/磨砂</a>
+				</div>
+				<a href="#" class = "a1">
+					<img src="" alt="">
+				</a>
+			</div>
+		</div>
+		<div class = "Makeup">
+			<div class="content">
+				<div>
+					<span><a href="#">底妆</a></span>
+					<a href="#">隔离 / 粉底</a>
+					<a href="#">粉底液</a>
+					<a href="#">粉饼 / 散粉</a>
+					<a href="#">BB霜 / CC霜</a>
+					<a href="#">气垫</a>
+					<a href="#">阴影 / 腮红</a>
+					<a href="#">提亮液</a>
+					<a href="#">遮瑕膏</a>
+				</div>
+				<div>
+					<span><a href="#">眼妆</a></span>
+					<a href="#">眼影</a>
+					<a href="#">睫毛膏</a>
+					<a href="#">眉笔</a>
+				</div>
+				<div>		
+					<span><a href="#">唇膏</a></span>
+					<a href="#">唇膏</a>
+					<a href="#">唇彩</a>
+					<a href="#">唇蜜</a>
+					<a href="#">润唇膏 / 护唇膏</a>
+				</div>
+				<a href="#" class="a1">
+					<img src="" alt="">
+				</a>
+			</div>
+		</div>
+		<div class = "bath">
+			<div class="content">
+				<div>
+					<span><a href="#">护发用品</a></span>
+					<a href="#">洗发水</a>
+					<a href="#">护发素</a>
+					<a href="#">发膜 / 护发精华液</a>
+					<a href="#">染发剂 / 定型剂</a>
+					<a href="#">护发套装</a>
+				</div>
+				<div>
+					<span><a href="#">沐浴用品</a></span>
+					<a href="#">沐浴露</a>
+					<a href="#">身体乳液 / 香体喷雾</a>
+					<a href="#">沐浴套装</a>
+					<a href="#">洗手液</a>
+					<a href="#">护手霜</a>
+				</div>
+				<a href="#" class="a1">
+					<img src="" alt="">
+				</a>
+			</div>
+		</div>
+		<div class = "VBYJ">
+			<div class="content">
+				<div>
+					<span><a href="">女性用品</a></span>
+					<a href="#">卫生巾</a>
+					<a href="#">护垫</a>
+					<a href="#">湿巾</a>
+					<a href="#">女用套装</a>
+				</div>
+				<div>
+					<span><a href="#">婴儿用品</a></span>
+					<a href="#">婴儿尿不湿</a>
+					<a href="#">婴儿护肤</a>
+					<a href="#">婴儿洗涤剂</a>
+				</div>
+				<a href="#" class="a1">
+					<img src="" alt="">
+				</a>
+			</div>
+		</div>
+		<div class = "man">
+			<div class="content">
+				<div>
+					<span><a href="#">男化妆品</a></span>
+					<a href="#">男士基础护理</a>
+					<a href="#">男士洁面</a>
+					<a href="#">男士隔离霜 / BB霜</a>
+					<a href="#">男士套装</a>
+				</div>
+				<a href="#" class="a1">
+					<img src="" alt="">
+				</a>
+			</div>
+		</div>
+		<div class = "Nichijou">
+			<div class="content">
+				<div>
+					<span><a href="#">牙刷</a></span>
+					<a href="#">牙膏</a>
+					<a href="#">漱口水</a>
+					<a href="#">美牙</a>
+					<a href="#">口腔套装</a>
+				</div>
+				<div>
+					<span><a href="">居家用品</a></span>
+					<a href="#">洗衣粉</a>
+					<a href="#">柔顺剂</a>
+					<a href="#">厨房洗剂</a>
+					<a href="#">居家洗涤</a>
+					<a href="#">芳香剂</a>
+				</div>
+				<div>
+					<span><a href="#">Health Food</a></span>
+					<a href="#">Healthy Food</a>
+				</div>
+				<a href="#" class="a1">
+					<img src="" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 登录界面 -->
+	<div class = "main container-fluid">
+		<div class="main-in">
+			<h1>客户登录</h1>
+			<div class="main-content">
+				<div class = "left">
+					<div class="top">
+						<span>非会员便捷登录</span>
+					</div>
+					<div class="logo">
+						<a href=""></a>
+					</div>
+					<div class = "member">
+						<span>会员账号登录</span>
+					</div>
+					<div class="login">
+						<span>如果您有账户，请使用您的邮箱地址登录。</span>
+						<div class = "account">
+							<p>邮箱地址  <span>*</span></p>
+							<input type="text" id = 'username'>
+							<div class = "hint">
+								请输入邮箱
+							</div>
+						</div>
+						<div class = "password">
+							<p>密码  <span>*</span></p>
+							<input type="password" id = "password">
+							<div class = "hint">
+								请输入密码
+							</div>
+						</div>
+						<div class="remember">
+							<a href="###" class = "iconfont"></a>
+							<span>记住我</span>
+							<a href="###" class = "iconfont">&#xe60b;</a>
+						</div>
+						<button type = "submit" id = "login-btn">
+							登录
+						</button>
+						<a href="" class = "forget">
+							您忘记密码了吗？
+						</a>
+					</div>
+				</div>
+				<div class = "right">
+					<div class="top">
+						<span>创建会员账号</span>
+					</div>
+					<p>
+						创建会员账号可以享受优惠、返现等各种会员福利，并可以查询或跟踪订单信息。
+					</p>
+					<a href="http://localhost/dist/register.html">注册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- foot-content -->
+	<div class = "foot-content container-fluid">
+		<div class = "foot-content-in">
+			<div class = "left">
+				<img src="images/logo.svg" alt="">
+			</div>
+			<ul>
+				<li><a href="#">公司简介</a></li>
+				<li><a href="#">安全隐私</a></li>
+				<li><a href="#">退货指南</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+			<span class = "s1">
+				公司名称 : LG生活健康  地址 : 韩国首尔市钟路区新门内路58, LG光化门大厦
+			</span>
+			<div class = "center">
+				<span>商业登记号码 : 107-81-98143</span>
+				<a href="#">核实公司</a>
+			</div>
+			<span class = "s3">
+				因受版权保护，本网站上的内容禁止擅自复制及发布。
+			</span>
+		</div>
+	</div>
+	<!-- foot-bottom -->
+	<div class = "foot-bottom container-fluid">
+		<div class="foot-bottom-in">
+			<div class = "left">
+				LG生活健康韩国总公司
+			</div>
+			<span>
+				Copyright © LG Household & Health Care Ltd. All Rights Reserved.
+			</span>
+			<div class = "right">
+				<a href="#">
+					<img src="images/footer_paypal.svg" alt="">
+				</a>
+				<a href="#">
+					<img src="images/footer_alipay.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

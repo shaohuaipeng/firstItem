@@ -1,0 +1,188 @@
+.main {
+  height: 800px; }
+
+.main .main-in {
+  width: 1200px;
+  height: 681px;
+  margin: 30px auto; }
+
+.main .main-in h1 {
+  width: 1170px;
+  font-weight: bold;
+  font-size: 35px;
+  padding-bottom: 18px;
+  border-bottom: 3px solid #c40452;
+  margin: 0 auto 22px auto; }
+
+.main .main-in .main-content {
+  width: 1170px;
+  height: 556px;
+  margin: 0 auto; }
+
+.main .main-in .main-content .left {
+  width: 562px;
+  height: 546px;
+  float: left;
+  overflow: hidden; }
+
+.main .main-in .main-content .left .top {
+  width: 562px;
+  height: 49px;
+  border-bottom: 1px solid black; }
+
+.main .main-in .main-content .left .top span {
+  font-size: 24px; }
+
+.main .main-in .main-content .left .logo {
+  height: 32px;
+  margin-bottom: 25px;
+  margin-top: 10px; }
+
+.main .main-in .main-content .left .logo a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #bd4342 url(../images/logo_little.png) no-repeat;
+  background-position: -34px -171px; }
+
+.main .main-in .main-content .left .member {
+  width: 562px;
+  height: 49px;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px; }
+
+.main .main-in .main-content .left .member span {
+  font-size: 24px; }
+
+.main .main-in .main-content .left .login {
+  width: 562px;
+  height: 363px;
+  overflow: hidden; }
+
+.main .main-in .main-content .left .login .account {
+  width: 562px;
+  height: 88px;
+  margin-top: 25px; }
+
+.main .main-in .main-content .left .login .account p {
+  font-size: 14px; }
+
+.main .main-in .main-content .left .login .account p span {
+  color: #c40452; }
+
+.main .main-in .main-content .left .login .account input {
+  margin-top: 10px;
+  width: 562px;
+  height: 40px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .main-content .left .login .account .hint {
+  font-size: 12px;
+  margin-bottom: 5px; }
+
+.main .main-in .main-content .left .login .password {
+  width: 562px;
+  height: 88px;
+  margin-top: 25px; }
+
+.main .main-in .main-content .left .login .password .hint {
+  font-size: 12px;
+  margin-bottom: 5px; }
+
+.main .main-in .main-content .left .login .password p {
+  font-size: 14px; }
+
+.main .main-in .main-content .left .login .password p span {
+  color: #c40452; }
+
+.main .main-in .main-content .left .login .password input {
+  margin-top: 10px;
+  width: 562px;
+  height: 40px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .main-content .left .login .remember {
+  margin-top: 20px;
+  width: 562px;
+  height: 22px; }
+
+.main .main-in .main-content .left .login .remember a {
+  display: block;
+  width: 25px;
+  height: 22px;
+  float: left;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .main-content .left .login .remember a:nth-of-type(1) {
+  margin-right: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 21px;
+  overflow: hidden; }
+
+.main .main-in .main-content .left .login .remember a:nth-of-type(2) {
+  color: #cfcfcf;
+  text-align: center;
+  line-height: 22px;
+  border: none; }
+
+.main .main-in .main-content .left .login .remember a:nth-of-type(2):hover {
+  color: #c40452; }
+
+.main .main-in .main-content .left .login .remember span {
+  font-size: 14px;
+  float: left; }
+
+.main .main-in .main-content .left .login button {
+  width: 562px;
+  height: 47px;
+  background: #c40452;
+  border: 1px solid #c40452;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.main .main-in .main-content .left .login button:hover {
+  background: #fff;
+  color: #c40452; }
+
+.main .main-in .main-content .left .login .forget {
+  color: #c40452;
+  font-size: 14px;
+  margin-top: 10px; }
+
+.main .main-in .main-content .right {
+  width: 562px;
+  height: 161px;
+  float: right;
+  overflow: hidden; }
+
+.main .main-in .main-content .right .top {
+  width: 562px;
+  height: 49px;
+  border-bottom: 1px solid black; }
+
+.main .main-in .main-content .right .top span {
+  font-size: 24px; }
+
+.main .main-in .main-content .right p {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.main .main-in .main-content .right a {
+  display: block;
+  width: 562px;
+  height: 47px;
+  background: #c40452;
+  border: 1px solid #c40452;
+  color: #fff;
+  text-align: center;
+  line-height: 47px; }
+
+.main .main-in .main-content .right a:hover {
+  background: #fff;
+  color: #c40452;
+  text-decoration: none; }

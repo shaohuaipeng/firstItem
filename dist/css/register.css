@@ -1,0 +1,377 @@
+@charset "UTF-8";
+.main {
+  height: 1100px; }
+
+.main .main-in {
+  width: 1200px;
+  height: 1020px;
+  margin: 40px auto; }
+
+.main .main-in h1 {
+  width: 1170px;
+  font-weight: bold;
+  font-size: 35px;
+  padding-bottom: 18px;
+  border-bottom: 3px solid #c40452;
+  margin: 0 auto 22px auto; }
+
+.main .main-in .customer {
+  width: 1170px;
+  height: 73px;
+  margin: 0 auto 20px auto; }
+
+.main .main-in .customer a {
+  display: block;
+  width: 351px;
+  height: 73px;
+  line-height: 73px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "宋体";
+  background: #c40452;
+  color: #fff;
+  margin: 0 auto; }
+
+.main .main-in .customer a:hover {
+  text-decoration: none; }
+
+.main .main-in .left {
+  width: 562px;
+  height: 770px;
+  float: left;
+  overflow: hidden; }
+
+.main .main-in .left .message {
+  border-bottom: 1px solid #858585;
+  margin-bottom: 15px;
+  padding-bottom: 12px; }
+
+.main .main-in .left .message span {
+  color: #1f1f1f;
+  font-size: 24px; }
+
+.main .main-in .left .surname {
+  width: 562px;
+  height: 89px;
+  margin: 0 0 20px; }
+
+.main .main-in .left .surname input {
+  width: 562px;
+  height: 40px;
+  margin-bottom: 5px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .left .surname div {
+  margin-bottom: 10px; }
+
+.main .main-in .left .surname div span {
+  color: #e02b27; }
+
+.main .main-in .left .surname .red {
+  color: #e02b27;
+  font-size: 12px; }
+
+.main .main-in .left .name {
+  width: 562px;
+  height: 89px; }
+
+.main .main-in .left .name input {
+  width: 562px;
+  height: 40px;
+  margin-bottom: 5px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .left .name div {
+  margin-bottom: 10px; }
+
+.main .main-in .left .name div span {
+  color: #e02b27; }
+
+.main .main-in .left .name .red {
+  color: #e02b27;
+  font-size: 12px; }
+
+.main .main-in .left .area_code {
+  width: 562px;
+  height: 89px;
+  margin-top: 20px; }
+
+.main .main-in .left .area_code select {
+  width: 562px;
+  height: 40px;
+  margin-bottom: 5px; }
+
+.main .main-in .left .area_code div {
+  margin-bottom: 10px; }
+
+.main .main-in .left .area_code div span {
+  color: #e02b27; }
+
+.main .main-in .left .phone_number {
+  width: 562px;
+  height: 89px;
+  margin-top: 20px; }
+
+.main .main-in .left .phone_number input {
+  width: 562px;
+  height: 40px;
+  margin-bottom: 5px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .left .phone_number div {
+  margin-bottom: 10px; }
+
+.main .main-in .left .phone_number div span {
+  color: #e02b27; }
+
+.main .main-in .left .phone_number .red {
+  color: #e02b27;
+  font-size: 12px; }
+
+.main .main-in .left .referrer {
+  width: 562px;
+  height: 89px;
+  margin-top: 20px; }
+
+.main .main-in .left .referrer div {
+  margin-bottom: 10px; }
+
+.main .main-in .left .referrer input {
+  width: 562px;
+  height: 40px;
+  margin-bottom: 5px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .left .email {
+  width: 562px;
+  height: 20px; }
+
+.main .main-in .left .email .click {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  float: left; }
+
+.main .main-in .left .email span {
+  display: inline-block;
+  float: left;
+  margin-left: 10px; }
+
+.main .main-in .left .email .click input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  opacity: 0; }
+
+.main .main-in .left .note {
+  width: 562px;
+  height: 20px;
+  margin-top: 20px; }
+
+.main .main-in .left .note .click {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  float: left; }
+
+.main .main-in .left .note span {
+  display: inline-block;
+  float: left;
+  margin-left: 10px; }
+
+.main .main-in .left .note .click input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  opacity: 0; }
+
+.main .main-in .right {
+  width: 562px;
+  height: 720px;
+  float: right;
+  overflow: hidden; }
+
+.main .main-in .right .message {
+  border-bottom: 1px solid #858585;
+  margin-bottom: 15px;
+  padding-bottom: 12px; }
+
+.main .main-in .right .message span {
+  color: #1f1f1f;
+  font-size: 24px; }
+
+.main .main-in .right .email {
+  width: 562px;
+  height: 89px;
+  margin: 0 0 10px; }
+
+.main .main-in .right .email input {
+  width: 562px;
+  height: 40px;
+  margin-bottom: 5px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .right .email div {
+  margin-bottom: 10px; }
+
+.main .main-in .right .email div span {
+  color: #e02b27; }
+
+.main .main-in .right .password {
+  width: 562px;
+  height: 92px;
+  margin: 0 0 20px; }
+
+.main .main-in .right .password input {
+  width: 562px;
+  height: 40px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .right .password div {
+  margin-bottom: 10px; }
+
+.main .main-in .right .password div span {
+  color: #e02b27; }
+
+.main .main-in .right .password p {
+  width: 562px;
+  height: 32px;
+  background: #f4f4f4;
+  line-height: 32px;
+  padding-left: 5px; }
+
+.main .main-in .right .repassword {
+  width: 562px;
+  height: 89px;
+  margin: 0 0 20px; }
+
+.main .main-in .right .repassword input {
+  width: 562px;
+  height: 40px;
+  margin-bottom: 5px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .right .repassword div {
+  margin-bottom: 10px; }
+
+.main .main-in .right .repassword div span {
+  color: #e02b27; }
+
+.main .main-in .right .remember {
+  margin-top: 20px;
+  width: 562px;
+  height: 22px;
+  margin-bottom: 20px; }
+
+.main .main-in .right .remember a {
+  display: block;
+  width: 25px;
+  height: 22px;
+  float: left;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .right .remember a:nth-of-type(1) {
+  margin-right: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 21px;
+  overflow: hidden; }
+
+.main .main-in .right .remember a:nth-of-type(2) {
+  color: #cfcfcf;
+  text-align: center;
+  line-height: 22px;
+  border: none; }
+
+.main .main-in .right .remember a:nth-of-type(2):hover {
+  color: #c40452; }
+
+.main .main-in .right .remember span {
+  font-size: 14px;
+  float: left; }
+
+.main .main-in .right .security_code {
+  width: 562px;
+  height: 70px;
+  margin: 0 0 10px; }
+
+.main .main-in .right .security_code input {
+  width: 562px;
+  height: 40px;
+  margin-bottom: 5px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .right .security_code div {
+  margin-bottom: 10px; }
+
+.main .main-in .right .security_code div span {
+  color: #e02b27; }
+
+.main .main-in .right .img_code {
+  width: 562px;
+  height: 70px;
+  overflow: hidden; }
+
+.main .main-in .right .img_code .img {
+  width: 200px;
+  height: 50px;
+  background: red;
+  float: left;
+  margin-top: 10px;
+  margin-right: 20px; }
+
+.main .main-in .right .img_code button {
+  width: 98px;
+  height: 40px;
+  float: left;
+  background: #c40452;
+  border: 1px solid #c40452;
+  color: #fff;
+  margin-top: 15px; }
+
+.main .main-in .right .img_code button:hover {
+  background: #fff;
+  color: #c40452; }
+
+.main .main-in .right .note_code {
+  width: 562px;
+  height: 68px; }
+
+.main .main-in .right .note_code input {
+  width: 444px;
+  height: 40px;
+  margin-bottom: 5px;
+  border: 1px solid #cfcfcf; }
+
+.main .main-in .right .note_code div {
+  margin-bottom: 10px; }
+
+.main .main-in .right .note_code div span {
+  color: #e02b27; }
+
+.main .main-in .right .note_code button {
+  width: 112px;
+  height: 40px;
+  background: #c40452;
+  border: 1px solid #c40452;
+  color: #fff; }
+
+.main .main-in .right .note_code button:hover {
+  background: #fff;
+  color: #c40452; }
+
+.main .main-in .right .register {
+  height: 47px;
+  width: 562px;
+  background: #c40452;
+  border: 1px solid #c40452;
+  color: #fff;
+  margin-top: 30px; }
